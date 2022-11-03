@@ -4,7 +4,7 @@
 
 * 1) Copiar el repositorio
 ```
-git clone git@github.com:evelingonzalezfeliu/somalier_UDD.git
+git clone https://github.com/evelingonzalezfeliu/somalier_UDD.git
 ```
 * 2) Descargar binario de somalier
 ```
