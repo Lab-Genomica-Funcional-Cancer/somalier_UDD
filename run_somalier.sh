@@ -143,11 +143,11 @@ start_log(){
 	n_step=$1
 	string_step=$2
 	
-	if [ ! -d "${INDIR}/${LOG}" ]; then 
-		mkdir "${INDIR}/${LOG}"
+	if [ ! -d "${OUTDIR}/${LOG}" ]; then 
+		mkdir "${OUTDIR}/${LOG}"
 	fi
 	
-	log_output="${INDIR}/${LOG}/${n_step}_log_${string_step}.out"
+	log_output="${OUTDIR}/${LOG}/${n_step}_log_${string_step}.out"
 	echo "$(date) : step ${n_step} - start - ${string_step}" >&3
 	echo "$(date) : step ${n_step} - logfile - ${log_output}" >&3
 	exec 1>$log_output 2>&1
@@ -166,7 +166,7 @@ check_log(){
 
 	n_step=$1
 	string_step=$2
-	log_output="${INDIR}/${LOG}/${n_step}_log_${string_step}.out"
+	log_output="${OUTDIR}/${LOG}/${n_step}_log_${string_step}.out"
 
 	## Si existe el archivo, se debe buscar el string "DONE-somalier" en el log
 	if [ ! -f "${log_output}" ]; then
@@ -183,10 +183,10 @@ check_log(){
 }
 
 get_samples(){
-	cd "${INDIR}/${FASTQ}"
+	cd "${INDIR}"
 	echo $PWD
 	#GET SAMPLES ID FROM FASTQ FILES
-	SAMPLES=$(ls *R1_*.fastq.gz| awk '{split($0,array,"_")} {print array[1]"_"array[2]}')
+	SAMPLES=$(ls *R1_*.fastq.gz| awk '{split($0,array,"_")} {print array[1]}')
 }
 
 step $STEP
