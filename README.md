@@ -65,6 +65,20 @@ Thu 03 Nov 2022 10:56:58 PM -03 : step 1 - start - mapping
 Thu 03 Nov 2022 10:56:58 PM -03 : step 1 - logfile - /home/administrador/Documentos/WorkSpace_2022/031122_Test_pipeline_somalier/0_logs/1_log_mapping.out
 ```
 
+## 4. Carpetas de salida ##
+
+En el *output directory* ingresado al ejecutar el script ```run_somalier.sh```
+Carpeta del ejemplo:
+```
+/home/administrador/Documentos/WorkSpace_2022/031122_Test_pipeline_somalier
+```
+Una vez termanido, se pueden observar las siguientes carpetas:
+
+* ```0_logs``` : Logs generados en cada paso del pipeline.
+* ```1_mapping``` : Alineamiento de lecturas al genoma de referencia.
+* ```2_somalier_extract``` : Extración del genotipo de los sitios (polimorfismos) de cada muestra.
+* ```3_somalier_relate``` : Carpeta con los resultaos de la relación entre muestras.
+
 
 
 
