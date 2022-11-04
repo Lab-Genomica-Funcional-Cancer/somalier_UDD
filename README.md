@@ -63,6 +63,13 @@ Threads:
 
 Thu 03 Nov 2022 10:56:58 PM -03 : step 1 - start - mapping
 Thu 03 Nov 2022 10:56:58 PM -03 : step 1 - logfile - /home/administrador/Documentos/WorkSpace_2022/031122_Test_pipeline_somalier/0_logs/1_log_mapping.out
+Fri 04 Nov 2022 02:05:38 AM -03 : step 1 - finished - mapping
+Fri 04 Nov 2022 02:05:39 AM -03 : step 2 - start - somalier-extract
+Fri 04 Nov 2022 02:05:39 AM -03 : step 2 - logfile - /home/administrador/Documentos/WorkSpace_2022/031122_Test_pipeline_somalier/0_logs/2_log_somalier-extract.out
+Fri 04 Nov 2022 02:05:39 AM -03 : step 2 - finished - somalier-extract
+Fri 04 Nov 2022 02:05:39 AM -03 : step 3 - start - somalier-relate
+Fri 04 Nov 2022 02:05:39 AM -03 : step 3 - logfile - /home/administrador/Documentos/WorkSpace_2022/031122_Test_pipeline_somalier/0_logs/3_log_somalier-relate.out
+Fri 04 Nov 2022 02:05:39 AM -03 : step 3 - finished - somalier-relate
 ```
 
 ## 4. Carpetas de salida ##
