@@ -16,6 +16,8 @@ wget https://github.com/brentp/somalier/releases/download/v0.2.16/somalier
 * 3) Agregar directorio de somalier al $PATH
 ```
 export PATH=/output/dir/somalier/donwloaded:$PATH
+#ejemplo
+export PATH=/home/administrador/Documentos/Programas:$PATH
 ```
 * 4) Instalar bwa
 ```
