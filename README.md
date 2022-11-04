@@ -9,9 +9,10 @@ Guía para realizar análisis de parentesco de un set de muestras (a partir de a
 ```
 git clone https://github.com/evelingonzalezfeliu/somalier_UDD.git
 ```
-* 2) Descargar binario de somalier
+* 2) Descargar binario de somalier y cambiamos permisos
 ```
 wget https://github.com/brentp/somalier/releases/download/v0.2.16/somalier
+sudo chmod 755 somalier
 ```
 * 3) Agregar directorio de somalier al $PATH
 ```
