@@ -24,6 +24,11 @@ export PATH=/home/administrador/Documentos/Programas:$PATH
 ```
 sudo apt-get install bwa
 ```
+* 5) Instalar samtools
+```
+sudo apt install samtools
+```
+
 ## 2. Parámetros de entrada ##
 
 Para ejecutar este pipeline es necesario indicarle al programa donde se encuentra los siguintes archivos; el genoma de referencia y los sitios (polimorfismos) utilizados por somalier para calcular la relacion entre muestras. Este último se encuentra en el repositorio ```sites.hg19.vcf.gz```
